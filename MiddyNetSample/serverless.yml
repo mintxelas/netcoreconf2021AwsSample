@@ -1,0 +1,30 @@
+﻿service: nicer-function-aws-sample
+
+plugins:
+  - serverless-iam-roles-per-function
+  - serverless-pseudo-parameters
+
+provider:
+  name: aws
+  runtime: dotnetcore3.1
+  region: eu-west-3
+  stage: demo
+
+package:
+  individually: true
+
+functions:
+  nicerFunctionSample:
+    handler: MiddyNetSample::MiddyNetSample.Nicer::Handler
+    package:
+      artifact: bin/Release/netcoreapp3.1/MiddyNetSample.Nicer.zip
+    environment:
+      messagePath: /funcion/mensaje
+    events:
+      - http:
+          path: /api/test
+          method: get
+    iamRoleStatements:
+      - Effect: "Allow"
+        Action: ssm:GetParameter
+        Resource: arn:aws:ssm:#{AWS::Region}:#{AWS::AccountId}:parameter/funcion/*

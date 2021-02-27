@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwsSample", "AwsSample\AwsSample.csproj", "{AECB1270-0F28-4D75-955D-ED747709C47D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiddyNetSample", "MiddyNetSample\MiddyNetSample.csproj", "{AD0E1B72-5E3D-4473-80E1-6923ED9D8A07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AECB1270-0F28-4D75-955D-ED747709C47D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECB1270-0F28-4D75-955D-ED747709C47D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECB1270-0F28-4D75-955D-ED747709C47D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECB1270-0F28-4D75-955D-ED747709C47D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD0E1B72-5E3D-4473-80E1-6923ED9D8A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD0E1B72-5E3D-4473-80E1-6923ED9D8A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD0E1B72-5E3D-4473-80E1-6923ED9D8A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD0E1B72-5E3D-4473-80E1-6923ED9D8A07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C29B8DA6-7CAE-4AE2-B0BC-8F801F00D35A}
+	EndGlobalSection
+EndGlobal

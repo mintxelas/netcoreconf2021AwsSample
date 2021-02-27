@@ -1,0 +1,30 @@
+﻿service: entire-function-aws-sample
+
+plugins:
+  - serverless-iam-roles-per-function
+  - serverless-pseudo-parameters
+
+provider:
+  name: aws
+  runtime: dotnetcore3.1
+  region: eu-west-3
+  stage: demo
+
+package:
+  individually: true
+
+functions:
+  entireFunctionSample:
+    handler: AwsSample::AwsSample.EntireFunction::Handler
+    package:
+      artifact: bin/Release/netcoreapp3.1/AwsSample.EntireFunction.zip
+    environment:
+      messagePath: /funcion/mensaje
+    events:
+      - http:
+          path: /api/test
+          method: get
+    iamRoleStatements:
+      - Effect: "Allow"
+        Action: ssm:GetParameter
+        Resource: arn:aws:ssm:#{AWS::Region}:#{AWS::AccountId}:parameter/funcion/*
