@@ -14,8 +14,8 @@
     <PackageReference Include="Amazon.Lambda.APIGatewayEvents" Version="2.4.0" />
     <PackageReference Include="Amazon.Lambda.Serialization.SystemTextJson" Version="2.1.0" />
     <PackageReference Include="Voxel.MiddyNet.ProblemDetails" Version="1.0.2" />
-    <PackageReference Include="Voxel.MiddyNet.SSMMiddleware" Version="1.0.2" />
-    <PackageReference Include="Voxel.MiddyNet.Tracing.ApiGatewayMiddleware" Version="1.0.2" />
+    <PackageReference Include="Voxel.MiddyNet.SSMMiddleware" Version="1.1.0-rc1.32" />
+    <PackageReference Include="Voxel.MiddyNet.Tracing.ApiGatewayMiddleware" Version="1.1.0-rc1.32" />
   </ItemGroup>
 
 </Project>
